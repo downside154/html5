@@ -29,40 +29,44 @@ body *, body *::before, body *::after{
     /* position: absolute; */
     /* border: 10px solid green; */
     /* float: left; */
-    padding: 30px 15px;
+    padding: 30px;
     /* width: 910px; */
     /* box-sizing: border-box; */
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 /* .main::before{
 
 } */
 
-.main::after{
+/* .main::after{
     display: block;
     content: '';
     clear: both;
-}
+} */
 
 .group{
     height: 60vh;
-    margin: 0 15px;
+    /* margin: 0 15px; */
 }
 
 .group1{
     background-color: violet;
     width: 250px;
-    float: left;
+    /* float: left; */
     /* border: 2px solid red; */
 }
 
 .group2{
     background-color: aqua;
     width: 380px;
-    float: left;
+    order:-1;
+    /* float: left; */
 }
 .group3{
     background-color: sandybrown;
-    float: left;
+    /* float: left; */
     width: 190px;
     /* width: px; */
 }
