@@ -2,6 +2,9 @@ body{
     margin: 0;
 }
 
+body *, body *::before, body *::after{
+    box-sizing: border-box;
+}
 
 .header, .visual, .main, .slogan, .footer-content{
     width: 940px;
@@ -21,11 +24,28 @@ body{
 .main{
     background-color: blue;
     /* height: 60vh; */
-    overflow: hidden;
-    border: 10px solid green;
+    /* overflow: auto; */
+    /* overflow: hidden; */
+    /* position: absolute; */
+    /* border: 10px solid green; */
+    /* float: left; */
+    padding: 30px 15px;
+    /* width: 910px; */
+    /* box-sizing: border-box; */
 }
+/* .main::before{
+
+} */
+
+.main::after{
+    display: block;
+    content: '';
+    clear: both;
+}
+
 .group{
     height: 60vh;
+    margin: 0 15px;
 }
 
 .group1{
@@ -47,6 +67,7 @@ body{
     /* width: px; */
 }
 
+
 .slogan{
     background-color:  lightgreen;
     height: 10vh;
@@ -54,6 +75,15 @@ body{
     /* margin-top: 250px; */
     }
     
+/* .slogan::before{
+    content: "first child element";
+}
+
+.slogan::after{
+    content: "last child element";
+} */
+
+
 .footer{
     background-color: silver;
     height: 10vh;
