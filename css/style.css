@@ -1,5 +1,6 @@
 body{
     margin: 0;
+    background-color: #ccc;
 }
 
 body *, body *::before, body *::after{
@@ -10,10 +11,29 @@ body *, body *::before, body *::after{
     width: 940px;
     margin: 0 auto;
 }
-
+/* 헤더 */
 .header{
-    background-color: yellow;
-    height: 10vh;
+    background-color: #fff;
+    position: relative;
+}
+/* logo */
+.logo{
+    /* background-color: yellow; */
+    margin: 0;
+    position: absolute;
+    top: 45px;
+    left: 65px;
+    font-size: 1em;
+    line-height: 1;
+}
+
+/* .logo a, .logo img{
+    display: block;
+} */
+
+/* intro */
+.member{
+    margin: 0;
 }
 
 .visual{
