@@ -1,156 +1,113 @@
+@import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
+@import url(./normalize.css);
+
+/* 숨김 콘텐츠 */
+.a11y-hidden{
+  background-color: red;
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: polygon(0 0, 0 0, 0 0);
+}
+
 html{
-    font-size: 10px;
+  font-size: 10px;
 }
-
 body{
-    margin: 0;
-    background-color: #ccc;
-    font-size: 1.2rem;
+  background-color: #ccc;
+  font-size: 1.2rem;
+  font-weight: 300;
+  font-family: 'Spoqa Han Sans Neo', 'sans-serif';
 }
-
 body *, body *::before, body *::after{
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
-/* link style */
-a {
-    text-decoration: none;
-    color: inherit;
+a{
+  text-decoration: none;
+  color: inherit;
 }
-
-
 .header, .visual, .main, .slogan, .footer-content{
-    width: 940px;
-    margin: 0 auto;
+  width: 940px;
+  margin: 0 auto;
 }
 /* 헤더 */
 .header{
-    background-color: #fff;
-    position: relative;
-    padding: 0 30px
+  background-color: #fff;
+  position: relative;
+  padding: 0 30px;
 }
-/* logo */
+/* 로고 */
 .logo{
-    /* background-color: yellow; */
-    margin: 0;
-    position: absolute;
-    top: 45px;
-    left: 65px;
-    font-size: 1em;
-    line-height: 1;
+  margin: 0;
+  position: absolute;
+  top: 45px;
+  left: 65px;
+  font-size: 100%;
+  line-height: 1;
 }
 
-/* .logo a, .logo img{
-    display: block;
-} */
-
-/* information */
+/* 안내링크 */
 .member{
-    margin: 0;
-    list-style: none;
-    padding-left: 0;
-    /* background: yellow; */
-    text-align: right;
-    font-size: 0;
-    padding: 5px 0px;
-    position: relative;
-    right: -10px;
+  margin: 0;
+  list-style: none;
+  padding-left: 0;
+  text-align: right;
+  font-size: 0;
+  padding: 5px 0;
+  position: relative;
+  right: -10px;
 }
-.member a {
-    display: inline-block;
-    /* background-color: pink; */
-    padding: 5px 10px;
-    text-transform: uppercase;
+.member li{
+  display: inline-block;
+  font-size: 1.2rem;
+}
+.member a{
+  display: inline-block;
+  padding: 5px 10px;
+  text-transform: uppercase;
 }
 .divider{
-    margin: 0 3px;
+  margin: 0 3px;
 }
-
-.member li{
-    display: inline-block;
-    font-size: 1.2rem;
-}
-/* .member li::before{
-    content: ":";
-} */
 .visual{
-    background-color: salmon;
-    height: 10vh;
+  background-color: salmon;
+  height: 10vh;
 }
-
 .main{
-    background-color: blue;
-    /* height: 60vh; */
-    /* overflow: auto; */
-    /* overflow: hidden; */
-    /* position: absolute; */
-    /* border: 10px solid green; */
-    /* float: left; */
-    padding: 30px;
-    /* width: 910px; */
-    /* box-sizing: border-box; */
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
+  background-color: blue;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 30px;
 }
-/* .main::before{
-
-} */
-
-/* .main::after{
-    display: block;
-    content: '';
-    clear: both;
-} */
 
 .group{
-    height: 60vh;
-    /* margin: 0 15px; */
+  height: 60vh;
 }
-
 .group1{
-    background-color: violet;
-    width: 250px;
-    /* float: left; */
-    /* border: 2px solid red; */
+  background-color: violet;
+  width: 250px;
 }
-
 .group2{
-    background-color: aqua;
-    width: 380px;
-    order:-1;
-    /* float: left; */
+  background-color: aqua;
+  width: 380px;
 }
 .group3{
-    background-color: sandybrown;
-    /* float: left; */
-    width: 190px;
-    /* width: px; */
+  background-color: sandybrown;
+  width: 190px;
 }
-
-
 .slogan{
-    background-color:  lightgreen;
-    height: 10vh;
-    /* clear: both; */
-    /* margin-top: 250px; */
-    }
-    
-/* .slogan::before{
-    content: "first child element";
+  background-color: lightgreen;
+  height: 10vh;
 }
-
-.slogan::after{
-    content: "last child element";
-} */
-
 
 .footer{
-    background-color: silver;
-    height: 10vh;
-    }
-        
-.footer-content{
-    background-color: pink;
-    height: 10vh;
+  background-color: silver;
 }
-
+.footer-content{
+  background-color: pink;
+  height: 10vh;
+}
