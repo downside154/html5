@@ -1,5 +1,5 @@
 @import url(//spoqa.github.io/spoqa-han-sans/css/SpoqaHanSansNeo.css);
-@import url(./fontello.css)
+@import url(./fontello.css);
 @import url(./normalize.css);
 
 /* 숨김 콘텐츠 */
@@ -59,7 +59,7 @@ a{
 
 /* 안내링크 */
 .member{
-  margin:0;
+  margin: 0;
   list-style: none;
   padding-left: 0;
   text-align: right;
@@ -90,21 +90,21 @@ a{
   padding-left: 225px;
 }
 .menu a{
-    outline: 0;
+  outline: 0;
 }
 .menu-item{
+  position: relative;
   float: left;
   border-left: 1px solid #fff;
 }
 .menu-item-button{
-    padding: 2px 20px 0; 
-    display: block;
-    color: #fff;
-    font-size: 1.6rem;
-    font-weight: 700;
-    text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
-    line-height: 45px;
-    position: absolute;
+  padding: 2px 20px 0; 
+  line-height: 45px;
+  display: block;
+  color: #fff;
+  font-size: 1.6rem;
+  font-weight: 700;
+  text-shadow: 1px 1px 0 #000, -1px -1px 0 #000;
 }
 .menu-act .menu-item-button{
   color: #ff0;
@@ -122,41 +122,37 @@ a{
   top: 47px;
   white-space: nowrap;
 }
-
 .menu-act .sub-menu{
-    display:block;
+  display: block;
 }
-
 .sub-menu1, .sub-menu2, .sub-menu3{
   left: 0;
 }
 .sub-menu4, .sub-menu5, .sub-menu6{
-    display: block ;
-    right: 0;
+  right: 0;
 }
-  
 .sub-menu li{
-    display: inline-block;
+  display: inline-block;
 }
 .sub-menu a{
-    display: inline-block;
-    padding: 10px 8px;
-    margin-right: 5px;
+  display: inline-block;
+  padding: 10px 0 8px;
+  margin-right: 5px;
 }
 /* .sub-menu a::before{
-    content: "\f192";
-    font-family: 'fontello';
-    display: inline-block;
-    text-decoration: inherit;
-    width: 1em;
-    margin-right: .2em;
-    text-align: center;
+  content: '\f192';
+  font-family: 'fontello';
+  display: inline-block;
+  text-decoration: inherit;
+  width: 1em;
+  margin-right: .2em;
+  text-align: center;
 }
 .sub-menu a:hover::before, .sub-menu a:focus::before{
-    content: '\e800';
+  content: '\e800';
 } */
-.sub-menu3 a:hover, .sub-menu a:focus{
-    color: red;
+.sub-menu a:hover, .sub-menu a:focus{
+  color: #f00;
 }
 .visual{
   background-color: salmon;
