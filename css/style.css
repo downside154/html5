@@ -319,6 +319,24 @@ input[id="userEmail"], input[id="userPw"]{
   border: 1px solid #aaa;
 }
 
+/* 유효성 검사 배너 */
+
+.validation-list{
+  margin: 25px 0 0 0;
+  padding-left: 0;
+  list-style-type: none;
+}
+
+.validation-list a{
+  display: block;
+  border-radius: 20px;
+  border: 1px solid #aaa;
+  margin-top: 10px;
+  padding: 7px 25px 5px 40px;
+  background: url(../css/images/validation_icon.png) no-repeat 15px 50%,
+  linear-gradient(180deg, #ccc, #eee);
+  background-color: #ccc;
+}
 
 .slogan{
   background-color: lightgreen;
