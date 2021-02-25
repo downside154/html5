@@ -341,6 +341,33 @@ input[id="userEmail"], input[id="userPw"]{
 .validation-list a:hover{
   color: red
 }
+/* 웹관련 용어 */
+.term{
+  background-color: yellow;
+  margin-top: 20px;
+  padding: 10px 0;
+  border: 1px solid #aaa;
+  border-radius: 10px;
+  text-indent: 15px;
+}
+.term-list{
+  display: block;
+  position: relative;
+  margin: 10px;
+}
+
+.term-list-subject{
+  color: blue;
+  background-color: pink;
+  width: 100px;
+}
+
+.term-list-thumbnail{
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-indent: 0;
+}
 
 .slogan{
   background-color: lightgreen;
