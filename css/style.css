@@ -338,6 +338,10 @@ input[id="userEmail"], input[id="userPw"]{
   background-color: #ccc;
 }
 
+.validation-list a:hover{
+  color: red
+}
+
 .slogan{
   background-color: lightgreen;
   height: 10vh;
