@@ -374,6 +374,38 @@ a{
 .term-list div:nth-child(even) .term-list-thumbnail{
   float: right;
 }
+
+.search{
+  background: #aaa;
+  border-radius: 5px 5px 0 0 ;
+  padding: 30px;
+  text-size-adjust: 1.5em;
+}
+
+.search label{
+  background-color: yellow;
+}
+
+.search button{
+  color: white;
+  background-color: rgb(19, 18, 18);
+  border-radius: 3px;
+  border: none;
+  padding: 5px 10px;
+  
+}
+.search{
+  
+}
+.search{
+  
+}
+.search{
+  
+}
+
+
+
 .slogan{
   background-color: lightgreen;
   height: 10vh;
