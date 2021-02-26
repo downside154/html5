@@ -377,32 +377,39 @@ a{
 
 /* 검색 폼 */
 .search-form{
-  background: linear-gradient(180deg, #ccc, #eee);
+  background: #ccc linear-gradient(180deg, #aaa,#fff);
+  border: 1px solid #aaa;
+  border-bottom-color: #fff;
+  padding: 15px 25px 10px;
   border-radius: 15px 15px 0 0 ;
-  padding: 10px 0px 0px 0px;
-  border: 1px solid black;
-  border-bottom: 0;
-  display: flex;
   justify-content: center;
 }
-
-.search-form > fieldset{
+.search-form fieldset{
   margin: 0;
   border: 0;
+  padding: 0;
 }
-.search input{
+.search-form .flexbox{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.search-form input{
   width: 200px;
-  height: 25px;
-  margin: 5px;
-  border: 1px solid black;
+  height: 22px;
+  padding: 1px 1px 1px 5px;
+  border: 1px solid #aaa;
   text-indent: 5px;
-}
-.search button{
-  color: white;
-  background-color: black;
   border-radius: 3px;
-  border: none;
-  padding: 5px 10px;
+}
+.btn-search{
+  border: 1px solid #aaa;
+  border-radius: 3px;
+  background-color: #212121;
+  color: #fff;
+  padding: 4px 10px;
+  font-size: 1.1rem;
+
 }
 
 
