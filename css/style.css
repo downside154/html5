@@ -408,9 +408,80 @@ a{
   background-color: #212121;
   color: #fff;
   padding: 4px 10px;
-  font-size: 1.1rem;
+  font-size: 1rem;
 
 }
+
+/* 메인2 공지사항 자료실 */
+
+.board{
+  background-color: yellow;
+  position: relative;
+  padding-top: 45px;
+  margin-top: 20px;
+}
+.tab{
+  border: 1px solid #aaa;
+  border-radius: 5px 5px 0 0;
+  background: #ccc linear-gradient(180deg, #ccc, #eee);
+  font-size: 1.2rem;
+  font-weight: 400;
+  color: #666;
+  padding: 10px 15px 8px ;
+  margin: 0;
+  position: absolute;
+  top: 0;
+  cursor: pointer;
+}
+.tab-act .tab{
+  color: #ce4827;
+  background: #fff;
+  border-color: #ce4827 #ce4827 #fff #ce4827
+}
+
+.notice-list, .notice-more, .pds-list, .pds-more{
+  display:none;
+}
+.tab-act .notice-list, .tab-act .notice-more, .tab-act .pds-list, .tab-act .pds-more{
+  display: block;
+}
+
+.notice-heading{
+  left:0;
+}
+.pds-heading{
+  left: 76px;
+}
+.notice-list, .pds-list{
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+  background-color: skyblue;
+}
+
+.notice-list li, .pds-list li{
+  display: flex;
+  /* justify-content: space-between; */
+}
+.notice-list a, .pds-list a{
+  background-color: lightgreen;
+  /* flex-grow: 1; */
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 280px;
+}
+.notice-list time, .pds-list time{
+  /* width: 150px; */
+}
+
+.notice-more, .pds-more{
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+
 /* 플렉스 박스 배치 */
 .group3{
   display: flex;
