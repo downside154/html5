@@ -2,6 +2,13 @@
 @import url(./fontello.css);
 @import url(./normalize.css);
 
+/* CSS 변수  global scope*/
+:root{
+  --primary-color: #ce4827;
+  --secondary-color: #eaaa2e;
+  --silver: #aaa;
+}
+
 /* 숨김 콘텐츠 */
 .a11y-hidden, legend{
   background-color: red;
@@ -415,7 +422,6 @@ a{
 /* 메인2 공지사항 자료실 */
 
 .board{
-  background-color: yellow;
   position: relative;
   padding-top: 45px;
   margin-top: 20px;
@@ -485,7 +491,6 @@ a{
 /* 플렉스 박스 배치 */
 .group3{
   display: flex;
-  background-color: yellow;
 }
 .group3::before{
   content: "";
@@ -499,6 +504,66 @@ a{
 .group3 span:nth-child(n+2){
   margin-left: auto;
 }
+
+/* 새소식 */
+.news{
+  margin-top: 20px;
+  position: relative;
+}
+
+.news::before{
+  content: "";
+  position: absolute;
+  top: 35px;
+  left: 0;
+  width: 100%;
+  height: 1px;
+  background: #aaa linear-gradient(90deg, #aaa 0%, #ccc 50%, #fff 70%, #fff 100%);
+}
+.news-item{
+  position: relative;
+  padding-left: 145px;
+  margin-top: 35px;
+}
+.news-item-heading{
+  margin: 0 0 5px 0;
+}
+
+.news-heading{
+  color: var(--primary-color);
+  margin-bottom: 5px solid gray;
+  font-size: 1.5rem;
+}
+.news-item-brief{
+  margin: 10px 0 0 0;
+  line-height: 1.5;
+}
+
+.news-item-thumbnail{
+  margin: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  text-align: center;
+}
+
+.news-item-thumbnail img{
+  display: block;
+  box-shadow: 0 15px 15px 1px var(--silver);
+  margin-bottom: 15px;
+}
+
+.news-more{
+  position: absolute;
+  top: -8px;
+  right: -8px;
+  padding: 8px;
+}
+.news-more::before{
+  color: hsla(110, 70%, 30%, 1);
+}
+
+
 
 /* 슬로건 */
 .slogan{
