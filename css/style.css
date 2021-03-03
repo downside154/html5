@@ -692,9 +692,45 @@ a{
 
 /* 슬로건 */
 .slogan{
-  background-color: lightgreen;
-  height: 10vh;
+  padding: 15px 100px 15px 180px;
+  position: relative;
 }
+.slogan-heading{
+  width: 110px;
+  height:83px;
+  line-height: 83px;
+  text-align: center;
+  position: absolute;
+  bottom: -25px;
+  left: 35px;
+  margin: 0;
+}
+.slogan-heading::after{
+  content:"";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left:0;
+  background: url(./images/coffee.png) no-repeat;
+}
+.slogan-content{
+  font-size: 1.3rem;
+  color: #988674
+}
+
+
+.slogan-content q::after{
+  content: ""
+}
+
+.slogan-content q::before{ 
+  font-size: 3.6rem;
+  position: relative;
+  top: 15px;
+}
+
+
 
 .footer{
   background-color: silver;
@@ -703,3 +739,10 @@ a{
   background-color: pink;
   height: 10vh;
 }
+
+
+
+
+
+
+
